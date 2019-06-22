@@ -1,0 +1,767 @@
+<html>
+
+<head>
+    <style>
+
+        .navigation {
+            width: 120px;
+            height: 27px;
+        }
+      
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Microsoft JhengHei;
+            background-color: #EFF4F8;
+        }
+
+        .paragraph {
+            font-size: 14px;
+            line-height: 25px;
+            margin-left: 27.5px;
+            margin-right: 27.5px;
+            text-align: center;
+            color:#454552
+        }
+
+        .paragraph2 {
+            font-size: 15px;
+            line-height: 30px;
+            margin-left: 27.5px;
+            margin-right: 27.5px;
+            color:#5D5D6E;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            background-color: #C9D6DE;
+
+            height: 90px;
+        }
+
+        .logo {
+            width: 67.77px;
+            height: 60px;
+            align-content: center;
+            margin: 0 auto;
+        }
+
+        .profile {
+            width: 45px;
+            height: 38px;
+            align-items: center;
+        }
+
+        .related-text {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 30px;
+        }
+
+        .card-flex-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card-img {
+            width: 100%;
+            margin: 0;
+        }
+
+        .card {
+            width: 320px;
+            padding: 20px 27.5px 25px 27.5px;
+            margin-right: 40px;
+            margin-bottom: 10px;
+        }
+
+        .card2 {
+            width: 100vw;
+            padding: 0px 0px 0px 0px;
+
+        }
+
+        .card2-img {
+            width: 100%;
+            margin: 0;
+
+        }
+
+        .card2-title {
+            font-size: 18px;
+            line-height: 21px;
+            display: flex;
+            text-align: center;
+            color: #1E2022;
+
+        }
+
+        .card3 {
+        margin-top:20px;
+        margin-right:27.5px;
+        margin-left:27.5px;
+
+
+        }
+
+        .card-title {
+            font-size: 18px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #1E2022;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        } 
+
+        
+        .card {
+        width: 95%;
+        margin-right: 0;
+        margin-bottom: 40px;
+        }
+
+        .card-desc {
+        font-size: 16px;
+        }
+        
+
+
+        .flex-container {
+            display: flex;
+            width: 320px;
+            height: 41px;
+            justify-content: space-around;
+            background-color: #EFF4F8;
+            border-width: 1 1 1 1px;
+            border-style: solid;
+            border-color: #181842;
+            padding: 10 10 10 10px;
+            margin-right: 27.5px;
+            margin-left: 27.5px;
+        }
+
+        .flex-item {
+            width: 45px;
+            height: 41px;
+            
+        }
+
+        .flex-item2 {
+            width: 50px;
+            height: 41px;
+            text-align: justify;
+            padding-right: 80px;
+            padding-top: 10px;
+            font-size: 14px;
+            color:#454552;
+            
+        }
+
+        .relative {
+            position: relative;
+            width: 320px;
+            height: 213px;
+        }
+
+        .absolute {
+            position: absolute;
+            width: 320px;
+            height: 49px;
+            padding: 164 0 0 0px;
+        }
+
+        .blockquote{
+        background-color:#C9D6DE;
+        margin-top:0px; 
+        margin-left:0px; 
+        margin-right:0px; 
+        padding: 5 7 10 7px; 
+        font-size: 13px;
+        color:#454552;
+
+        }
+
+        .blockquote2{
+        background-color:#F5BDBD;
+        margin-right:27.5px;
+        margin-left:27.5px; 
+        padding: 10 7 10 7px; 
+        font-size: 13px;
+        color:#454552;
+
+        }
+        .blockquote3{
+        border-color:#181842;
+        border-width:3 0 0 0px;
+        border-style:solid;
+        margin-top:30px;
+        margin-left:0px;
+        margin-right:0px;
+        padding:0 0 0 0px;
+
+        }
+        .paragraph3{
+        font-size:20px;
+        font-weight:bold;
+        color:#181842;
+        text-align:center;
+        }
+        
+
+        .title{
+        font-size:17.5px;
+        font-weight:bold;
+        color:#4E4E56;
+        text-align:left;
+        margin-left:28px;
+        margin-right:27px;
+        }
+
+        @media all and (min-width: 768px) {
+        
+        .profile {
+        width: 258px;
+        height: 218px;
+        align-items: center;
+        }
+        .paragraph{
+        font-size: 20px;
+        line-height: 28px;
+        }
+
+        .card-flex-box {
+            display: cover;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        
+        .card2 {
+            padding: 0px 0px 0px 0px;
+            width:100vw;
+            max-height: 900px;
+            object-fit:cover;
+
+        }
+        .card2-img {
+            width: 100%;
+            margin: 0;
+            
+        }
+
+        .paragraph2 {
+        font-size: 20px;
+        line-height:42px;
+        margin-left:190px;
+        margin-right:190px;
+        max-width:950px;
+        }
+        
+        .blockquote2{
+        background-color:#F5BDBD; 
+        margin-left:190px;
+        margin-right:190px;
+        padding: 15 12 15 12px; 
+        font-size: 18px;
+        color:#454552;
+        max-width:950px;
+
+        }
+
+        .paraghaph3{
+        font-size:36px;
+        font-weight:bold;
+
+        }
+
+        .card3 {
+        margin-left:190px;
+        margin-right:190px; 
+        max-width:950px;
+
+        }
+        .card-img {
+            width: 100%;
+            margin: 0;
+        }
+        .title{
+        font-size:26px;
+        text-align:left;
+        margin-left:190px;
+        margin-right:190px;
+        }
+        .logo {
+            width: 131px;
+            height: 104px;
+            align-content: center;
+            margin: 0 auto;
+        }
+        
+        .nav{
+        height:150px
+        }
+        .card {
+            margin-left:260px;
+            margin-right:260px;
+            margin-bottom: 10px;
+        }
+        .blockquote3{
+        margin-top:80px;
+        margin-left:190px;
+        margin-right:190px;
+
+        }
+        .blockquote{
+        background-color:#C9D6DE;
+        margin-top:0px; 
+        margin-left:0px; 
+        margin-right:0px; 
+        padding: 5 7 10 7px; 
+        font-size: 18px;
+        color:#454552;
+
+        }
+    }
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/profile.css" type="text/css" rel="stylesheet">
+    <!-- 載入 Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb='http://www.facebook.com/2008/fbml'></html>
+    <!--臉書分享-->>
+    <title>《媒腦》遊走人間邊界 乩童的不凡人生</title>
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="《媒腦》遊走人間邊界 乩童的不凡人生" />
+  <meta property="og:description"   content="【專題記者李冠杰、洪靖淳、高海葳、張庭瑀、蔡明衡綜合報導】2017年電視劇《通靈少女》在台灣掀起熱潮，故事原型人物「索非亞」劉柏君，十五歲時成為靈媒，在廟宇一做就是十年，神鬼藉他的身體作為溝通橋樑。此外，他也是台灣首位棒球女主審，更在3月20日前往聯合國總部領取「國際奧會女性與體育獎」。靈媒、乩童同樣身為替鬼神傳達訊息的人，然而人們總對他們這種作為超自然世界中介者的職業有著迷思，認為這種「帶天命」的人就是要一輩子在廟裡工作，不能兼職，其實不然。由劉柏君的例子來看，除了在信仰發揮影響力，盡力為人、神、鬼服務外，在日常生活中，他們也努力扮演好自己想擔任的角色。  " />
+  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+</head>
+
+<body>
+    <nav class="nav">
+        <img class="logo" src="logo.jpg">
+    </nav>
+    <!--首圖-->
+    <div class="card-flex-box ">
+        <!-- flex item -->
+        <div class="card2 ">
+            <figure class="card2-img ">
+                <img src="H/洪靖淳-4.png" width="100% "></img>
+            </figure>
+        </div>
+
+        <!-- 個人照 -->
+        <div>
+            <figure>
+                <img class="profile" src="H/洪靖淳.png"></img>
+            </figure>
+
+            <p class="paragraph">
+                洪靖淳
+            </p>
+            <p class="paragraph">
+                2019/4/11
+            </p>
+        </div>
+
+        <!--本文-->
+
+        <div>
+            <p class="paragraph2">
+                【專題記者李冠杰、洪靖淳、高海葳、張庭瑀、蔡明衡綜合報導】2017年電視劇《通靈少女》在台灣掀起熱潮，故事原型人物「索非亞」劉柏君，十五歲時成為靈媒，在廟宇一做就是十年，神鬼藉他的身體作為溝通橋樑。此外，他也是台灣首位棒球女主審，更在3月20日前往聯合國總部領取「國際奧會女性與體育獎」。靈媒、乩童同樣身為替鬼神傳達訊息的人，然而人們總對他們這種作為超自然世界中介者的職業有著迷思，認為這種「帶天命」的人就是要一輩子在廟裡工作，不能兼職，其實不然。由劉柏君的例子來看，除了在信仰發揮影響力，盡力為人、神、鬼服務外，在日常生活中，他們也努力扮演好自己想擔任的角色。
+            </p>
+            <h2 class="title">
+            神明的代理人　乩童為神為民不求回報
+            </h2>
+        </div>
+        <div class="card3">
+            <figure class="card-img">
+                <img src="H/乩1.jpg" width="100%"> </img>
+                <blockquote class="blockquote">
+                    張志楨以及張煜立父子檔竭誠為神明服務，不時會提供附近民眾問事的服務，民眾只要有疑問就可以前去「問事」，讓神明的代言人可以為迷惘的信徒找到解答。　圖／張庭瑀攝
+                    <div style="top:50%;">
+                </blockquote>
+
+            </figure>
+        </div>
+        <div>
+            <p class="paragraph2">
+                    位在淡水的金龍太子宮，不時會提供附近居民「問事」的服務，張志楨以及張
+                    煜立父子檔是這間宮廟的靈魂人物，他們為神明服務多年，始終保持著一顆虔
+                    誠的心。父親張志楨是淡水淡海里里長，同時也是「濟公」的代言人，兒子張
+                    
+                    煜立則擔任「三太子」的代言人。宮廟裡，原本笑容可掬的里長伯坐在神像面
+                    前的板凳上，肅穆的氣氛油然而生。只見他大力地左右擺頭，過了良久沒有停
+                    止。突然間，里長伯從板凳上站起，大聲朝天吼叫，臉部表情變得猙獰，讓人
+                    心生敬畏。旁人急忙幫祂換上問事時需穿的衣服，遞上祂最喜愛的花生及米酒
+                    ，扶祂坐上問事時的寶座——「釘椅」，上面雖遍佈尖銳的釘子，祂卻一派輕
+                    鬆地拿著法扇坐在上頭。此時的里長伯已不再是里長伯，而是神明「濟公」的
+                    代言人，也就是俗稱的「乩童」。
+            </p>
+
+        </div>
+        <div class="card3">
+            <figure class="card-img">
+                <img src="H/乩2.jpeg" width="100%"> </img>
+                <blockquote class="blockquote">
+                    佈滿釘子的椅子——「釘椅」，常人坐上去會感到十分疼痛，然而在乩童臉上卻沒有感到一絲痛楚。神明降駕時，乩童會坐在上面進行問事，為民眾進行解答。　圖／張庭瑀攝
+                    <div style="top:50%;">
+                </blockquote>
+
+            </figure>
+        </div>
+        <div>
+            <p class="paragraph2">
+                    嘉義的慧明社醒善堂內，老乩童緊閉雙眼，雙手持鸞筆（註1）上上下下激烈地
+                    來回敲打桌面，「叩叩」聲充斥整座廟宇，原先吵雜的人群瞬間肅然起敬。老
+                    乩童一次次將籤詩內容刻劃在神桌上頭，一旁的廟宇人員則將他比劃出的字大
+                    聲唸出，以便負責記錄的人一一寫下，再由專職人員向信徒解籤。老乩童徐德
+                    隆今年高齡91歲，為神明服務近六十年，32歲那年，他在高雄一間媽祖廟拜拜
+                    ，偶然被媽祖選中成為乩童，而後成為關公代言人，目前仍不遺餘力在替神明
+                    服務。徐德隆不僅體格、氣色極好，走起路來更是抬頭挺胸，只能用健朗來形
+                    容。「我們這種被神明抓來當乩童的人，神明都會有很大的保佑。」他侃侃而
+                    談自已與神明的緣分，神情裡滿是感謝與自豪。
+            </p>
+            <p class="paragraph2">     
+                    （註1）：又稱「乩筆」，是神明降駕時，藉乩童的手用來寫下自己言詞的器具。
+            
+            </p>
+
+        </div>
+        <div class="card3">
+            <figure class="card-img">
+                <img src="H/乩3.jpg" width="100%"> </img>
+                <blockquote class="blockquote">
+                   
+                    嘉義慧明社醒善堂內，91歲老乩童徐德隆手持鸞筆，雙眼緊閉，代替神明為信徒解惑。　圖／高海葳攝
+                    <div style="top:50%;">
+                </blockquote>
+                
+            </figure>
+        </div>
+        <div>
+            <h2 class="title">
+            是人不是神　穿梭在人神之間的乩童人生
+            </h2>
+            <p class="paragraph2">
+                    23歲的潘家齊於新北市金環太子會擔任太子爺的代言人已有六年的時間。因緣
+                    際會之下，潘家齊先後請了媽祖與太子爺神像到家中拜，當時他僅是抱持著熱
+                    愛信仰與虔誠的心祭拜，完全沒想過要成為乩童。他回想道：「當時打坐大概
+                    半年多的時候，我突然全身發熱，脖子被電到很震，後來就睡著了，我一醒來
+                    就看到我媽在哭。」潘家齊描述眼前的景象，媽媽顫抖地比著神桌，告訴他太
+                    子爺降駕，指定他的身體救助眾生，而當年潘家齊年僅16歲。
+            </p>
+        </div>
+         <div class="card3">
+            <figure class="card-img">
+                <img src="H/乩4.jpg" width="100%"> </img>
+                <blockquote class="blockquote">
+                        23歲的潘家齊長期為神明服務，問事時擔任太子爺的乩身，平時則於店內製作神明服
+                        裝、飾品。　圖／高海葳攝
+                    <div style="top:50%;">
+                </blockquote>
+
+            </figure>
+        </div>   
+        <div>
+                <p class="paragraph2">
+                        同樣將乩童視為使命，在高雄玉淵慈惠堂服務的張小雯起初對於成為乩童有些
+                        抗拒，「小時候爸媽不喜歡我去講別人的生死，畢竟他們看不到那些東西，他
+                        們覺得是小孩在講怪力亂神，因此常常罵我。」回憶起兒時點滴，現年25歲的
+                        張小雯仍記憶猶新。「只要到<span style="background-color:pink">廟裡</span>就會一直乾嘔、流淚，身體也會不由自主地
+                        晃動，就是會有那種感應到的感覺。」在一次三媽（註2）的託夢中，張小雯開
+                        始在玉淵慈惠堂服務，「夢中的三媽看似30歲出頭，臉上並非日常見到的烏黑
+                        雕像相貌，三媽身穿京劇服裝、臉上掛著微笑將我帶去漂亮的房子內。」張小
+                        雯形容當時的夢境，直到去年，張小雯才真正踏上乩童這條路，開始學習如何
+                        當一位稱職的乩童。
+                </p>
+                <p class="paragraph2">
+                （註2）：媽祖又分為「大媽、二媽、三媽….」甚至有六媽，雖然稱謂不同但都是媽祖本人，最初媽祖廟建成時，通常媽祖的神像只有一尊，稱為大媽。隨著廟宇越來越大，媽祖的「工作」也越來越多。像是出巡時，如果把大媽的神像請去出巡，此時廟中便沒有媽祖神像，於是廟裡通常會再刻第二尊媽祖神像，讓大媽隨時在廟裡坐鎮，二媽就可以出巡或者作其它「工作」。隨著媽祖的「工作」越來越多，神像也越刻越多。第一尊刻的就叫大媽，第二尊刻的就叫二媽，第三尊刻的就叫三媽，以此類推。
+                </p>
+                <blockquote class="blockquote2">
+                        小雯有跟我們分享，一般人進到廟宇看到神明雕像是一動不動的在神桌上，但小雯看
+                        到的神明是會眨眼微笑的，在小雯眼裡，廟裡一整排的三太子神像，三太子們是超脫
+                        神像軀殼在揮舞著刀槍，十分有趣。
+                </blockquote>
+            </div>
+            <div class="card3">
+                    <figure class="card-img">
+                        <img src="H/乩5.jpg" width="100%"> </img>
+                        <blockquote class="blockquote">
+                                在高雄玉淵慈惠堂擔任乩童的張小雯，除了幫民眾問事，濟世救人，平時的另一個身分是直播平台的直播主。　圖／洪靖淳攝
+                            <div style="top:50%;">
+                        </blockquote>
+        
+                    </figure>
+                </div>  
+                <div>
+                    <p class="paragraph2">
+                        除了為神服務，張小雯平時還擔任網路直播主，他坦言，「幫神明服務是義務，是沒有薪水的，因此三媽對我直播主的工作並沒有意見。」除了直播以外，張小雯偶爾也會出陣頭賺取生活費。他表示，有時候會跟三媽請假去直播，因此目前還稱得上兩者兼顧，「要踏入乩童這條路的前一刻，就必須問自己是否想好、準備好了，之後才不會感到後悔。」同是年輕人的張煜立則認為，助人雖能帶來成就感，但他卻還是很難在「乩生」以及「人生」之間找到平衡，「心中還是排斥，不是排斥當代言人，而是排斥得捨去一些玩樂時間。」    
+                    </p>
+                    <p class="paragraph2">
+                        雖然許多乩童的日常工作與廟宇文化差異甚大，但潘家齊卻將為神明服務視為興趣。他目前於「神明的店」製作神明衣服、飾品及各式宮廟慶典所需精品，休閒時間也常參與宗廟活動。對他而言，宮廟文化早成為他的日常，因此宗教外的生活對潘家齊而言相對變得陌生，「我上週一個人逛街，突然覺得逛街是一件很可怕的事情，要從這些空間（宮廟）跳出去做平常人做的事，突然覺得買衣服是很困難的一件事 。」
+                    </p>
+                    <p class="paragraph2">
+                    「乩童嘛係郎，嘸係神，嘛有破病、不舒適欸時（台語）。」徐德隆笑道，並非成為乩童後就可以保證未來一路順遂，非問事日也得靠自己籌生活費。雖然平時神明不會插手乩童的生活，但他表示，當有困難發生時，神明從不吝嗇給予幫助，遇到緊急事情時，神明甚至會直接以伏筆（註3）給予建議。「作乩童欸郎，攏就短命，但係神明就照顧我，厚我欸當活到這個年數。（台語）」徐德隆分享，在乩童這條路上從未濫用信徒對自己的信賴，也因此得到神明極大祝福，得以以91歲高齡，繼續服侍神明。
+                    </p>
+                    <p class="paragraph2">
+                    （註3）：神明降駕時藉乩童之手，用鸞筆紀錄神明所說之言。
+                    </p>
+                </div>
+                <div class="card3">
+                        <figure class="card-img">
+                            <img src="H/乩6.jpg" width="100%"> </img>
+                            <blockquote class="blockquote">
+                                    老乩童徐德隆（圖左）與廖大乙（圖右）熱烈地分享所見所聞，對於信仰抱持虔誠的心，期許能為信徒帶來幫助。　圖／高海葳攝
+                                <div style="top:50%;">
+                            </blockquote>
+            
+                        </figure>
+                    </div>  
+                <div>
+                    <h2 class="title">
+                    乩童不簡單　修煉成乩的心酸
+                    </h2>
+                    <p class="paragraph2">
+                            服侍神明的同時，他們經常在面對神蹟
+                    </p>
+                    <p class="paragraph2">
+                            起初，潘家齊並未意識到乩童的重要性，他分享，曾有位朋友體質難孕，經過多次人工受孕才成功懷上孩子。當產期將至，朋友前來拜託太子爺保佑，不幸的是生產時，孩子雖平安出世，母親卻血流不止。太子爺即時叫醒睡夢中的潘家齊，吩咐他前往產房，為孕婦打手印（註4）。「我想說天啊我去產房打手印，醫生護士會不會覺得我有病？」但沒多久，血就奇蹟般地止住了。「那時我已經做乩身兩年，但是我第一次意識到我是真的在救人。」潘家齊認為，過去幫助人求財或是求事業等身外之物，沒有太多的成就感，但真正看見一個瀕死的人藉由手印好起來後，他才意識到自己的力量有多麼不可忽視。
+                    </p>
+                    <p class="paragraph2">
+                    （註4）：用手指比出一些宗教上的咒語。
+                     </p>
+                     <p class="paragraph2">
+                     救「人」之外，潘家齊有時也需要面對「鬼」。約莫兩個月前，一名中邪的女生來到金環太子會求助。潘家齊回憶，當時女生的吼叫聲從一樓傳到四樓，像殭屍一般衝進大門，眼睛瞪得很大，眼裡盡是無助，眼淚一顆顆像珍珠般掉下來。「我知道裡面這個人還在，這女生還在裡面，但好像真的有很多無可奈何的事情，不知道怎麼辦。 」全場四十幾個信徒全部躲到遠處，只留下潘家齊與其他工作人員。「其實我很怕，但是我是現場最不能怕的那個，大家都知道我是乩童欸，鬼來了我還怕，那這邊怎麼辦。」後來媽祖發現這女生身上共跟了十三個鬼，為解決問題，便降駕藉潘家齊的乩身驅除怪戾之氣。
+                      </p>
+                      <p class="paragraph2">
+                            要成為真正的乩童，繁瑣的規矩和無數的訓練是必經之路。除了不能嫖、賭、淫和碰酒外，也不太能食用牛羊。因為對有些神明的乩身來說，吃牛肉或羊肉會破壞修行，如道教中的「廣澤尊王」因在人間時以養羊維生，因此祭拜祂的乩童便不能吃羊。除了規矩外，「買斷關係」也是成為乩童的重要程序，「神明會向祖先三代買斷與乩身的關係，也就是告訴祖先說這個孩子以後是我的了，他的身體是我的了。」張小雯解釋。而神明為了測試乩童，也常給予考驗，像是張小雯為了完成閉關修練，必須連續四十九天以蔬果為食，晚上須在狹小的神桌下就寢不得外出，直到早上五點後才能離開廟堂。平日張小雯也須打坐，向神明學習<span style="background-color:pink">如何問事</span>和畫符。
+                    </p>
+                    <blockquote class="blockquote2">
+                            小雯也提到，平時乩童上身時會分為幾分駕，最多可以到達三分駕，一分駕或是更少的時候是還有自主意識的，之後更進一步的狀態有好幾種，其中一種是頭腦還有意識但手會自己在動，而另一種狀態是你已經沒有意識自己身體在動了，至於最深的就是你會發現自己已經站在旁邊，看著自己辦事。
+                    </blockquote>
+                    
+                    <p class="paragraph2">
+                            與張小雯的閉關過程相似，潘家齊在只有一張單人床和書桌的房間裡閉關。「
+                            那個空間大概兩坪大吧，但你像在一個宇宙。」他分享，在閉關期間，前七天
+                            三餐都要吃素，後四天更只能吃水果，到最後幾天僅能飲水。不僅飲食受限，
+                            生活起居也受到多方限制，潘家齊描述當時的情形，「閉關就是不能洗澡，上
+                            廁所跟犯人一樣用一個洞送出去，因為很餓所以也睡不著，而且他們（神明）
+                            會一直叫你起來上課，在裡面就是跟他們一直調頻率。」
+                     </p>
+                     <p class="paragraph2">
+                            「我曾經有被關在廟裡受禁（註5）12天。」徐德隆回憶，受禁時奉神明指示
+                            一餐只能吃一小塊糕點。此外，受禁期間只能小便，不能大便，一旦沒有遵守
+                            規定就必須重新開始。徐德隆表示，受禁期間會從自己的主神開始降駕指導，
+                            接著由其他神明輪流附身共同教導，而自己就是一直伏筆出字，直到神明滿意
+                            。「這些（儀式）都是神明指示我要做的，為的就是要試煉我。」
+                    </p>
+                    <p class="paragraph2">
+
+                            （註5）：「受禁」就是閉關。首先要齋戒沐浴，閉關多在廟宇廂房，四周門窗緊閉，
+
+                            禁止與閒雜人等接觸，並用紅綢布遮光，一方面防人窺視，一方面防邪進入；內設神
+                            案晨夕焚香，地舖草蓆作床，要頭不見天、腳不踏地的修煉；另設有簡易的衛浴設備
+                            ，平時大門深鎖，只留一洞或是開一小側門作為送食物茶水與交換盥洗衣物之用，通
+                            常以麵食和水果為主，絕無葷魚之物，只吃少許份量的食物，且食物漸漸減少，最後
+                            可能僅飲茶水，盡量避免大小便，並以通宵不眠為上法，在精神心智迷茫之間，練習
+                            神靈入體。
+                    </p>
+                    <h2 class="title">
+                    「乩」不可失　時代變遷下不變的寄託
+                    </h2>
+                    <p class="paragraph2">
+                    「在我們小的時候，科技並不發達，大家遇到事情都一定會來求助神明。」民
+                    俗專家廖大乙分享，過去廟宇不只提供人們求神問事，功能甚至類似現代醫院
+                    。在醫療不發達的過去，就連感冒、發燒，甚至是跌打損傷，民眾都會趕到廟
+                    宇尋求幫助，而這些事項都屬於乩童的職責範疇。他解釋，神明附在乩童身上
+                    ，除了幫助信眾消災解惑外，更希望藉著乩身教化人民、安定人心。
+                    </p>
+                </div>
+                <div class="card3">
+                        <figure class="card-img">
+                            <img src="H/乩7.jpg" width="100%"> </img>
+                            <blockquote class="blockquote">
+                                    面對生活中的困難，信徒（圖中）會前來廟宇問事，乩童則手拿鸞筆，為信徒解惑。　圖／高海葳攝
+                                <div style="top:50%;">
+                            </blockquote>
+            
+                        </figure>
+                    </div> 
+                    <div>
+                            <p class="paragraph2">
+                                    可惜的是，乩童對於現代人，似乎不再是正面、鼓舞人心的存在。種種負面新
+                                    聞，扭曲了乩童在民眾心中的形象，也喪失對於乩童的信任。「現在的人有些
+                                    做一做之後，就會開始偏離正確的道路，這點是我覺得乩童會發生的問題 。」
+                                    廖大乙坦言，有些乩童在取得成功後開始驕傲自滿，接著受金錢誘惑，或被慾
+                                    望吞噬，逐漸背離正道。甚至有不法之徒冒充乩童騙財騙色，引發社會反感，
+                                    
+                                    使得大家開始排斥乩童，某些廟宇更為了降低廟方名聲被破壞的風險，而不再
+                                    有乩童。    
+                            </p>
+                            <p class="paragraph2">
+                                    對此，關注台灣民俗學的學者溫宗翰解釋，乩童具有極強的公共性。傳統的乩
+                                    童，從選乩身到後面的「坐禁」、「受訓」等儀式，都是在公共場所進行，讓
+                                    民眾可以看見整個選乩過程，具有一定公信力。但現代個人主義興起，大家逐
+                                    漸強調私有財產、生活空間，甚至是個人的精神價值，也驅使民間信仰趨向個
+                                    人化，產生現今較為常見的「靈乩（註6）」。溫宗翰認為，這種改變雖增添更
+                                    多能夠呈現台灣特色、文化脈絡的乩童，卻也造成現代乩童公信力降低。 。」
+                            </p>
+                            <p class="paragraph2">
+                                    （註6）：靈乩則是以靈為媒介，由於累世因緣而俱足了靈乩的慧根。與傳統乩童不同
+                                    ，靈乩多半自身通靈，被選擇過程不需廟方介入，公共性較低，強調的是個人與神明
+                                    直接接觸。
+                            </p>
+                            <p class="paragraph2">
+                                    隨著現今社會風氣改變、乩童的公信力因種種緣故降低，他們漸漸淡出人們的
+                                    生活圈，曾經興盛的文化，也因而慢慢走出大眾的視線。然而溫宗翰認為，乩
+                                    童的文化並不會因時代變遷消失，它將以各種不同的形式留在社會。他進一步
+                                    解釋，每個人生活中，必有一些人類無法處理的需求。這些需求不單是為解決
+                                    生存問題或理解未知之事，更涉及基本價值觀和心靈能量的建構。乩童作為民
+                                    眾與超自然世界的中介者，不只滿足人類對超自然世界的想像，同時也提供雙
+                                    方連結的管道。
+                            </p>
+                            <p class="paragraph2">
+                            「我覺得乩童這種文化是不可能消失的。」徐德隆有自信地說，他認為乩童文
+                            化對於地方極為重要，不會也不能消失。他分享，最近問事的年輕人越來越多
+                            ，前陣子才有一對年輕夫妻在問事過程中親眼見證神明顯靈。「只要體力能負
+                            荷，我就會繼續傳達神諭濟世。」徐德隆的眼神無比堅定，中氣十足地說著。
+                            </p>
+                        </div>
+                        <div class="card3">
+                                <figure class="card-img">
+                                    <img src="H/乩8.jpg" width="100%"> </img>
+                                    <blockquote class="blockquote">
+                                            慧明社醒善堂內，信徒人來人往，彼此之間因宗教而變得關係緊密。 　圖／高海葳攝
+                                        <div style="top:50%;">
+                                    </blockquote>
+                    
+                                </figure>
+                            </div> 
+                        <div>
+                            <p class="paragraph2">
+                                    乩童是神明與人們的溝通橋樑，他們不僅是為解決信眾問題而存在，在地方對
+                                    於教化、安定民心的作用更是無可取代。如同溫宗翰所說：「乩童的存在使得
+                                    民間信仰的特質得以被看見，信仰功能才能清楚地發揮。」然而，在幫助信徒
+                                    解決問題之餘，多數乩童平時就和一般人無異，從事著宗教外的工作，領著和
+                                    一般人相同的薪水，可在神明和信徒面前，他們卻扮演著無比重要的角色，肩
+                                    負著雙倍的責任和義務。張煜立身為信徒們的寄託，他仍然篤定地說：「計劃
+                                    當到神明叫我退休再退休吧，或哪天我過世的時候。」    
+                            </p>
+                        </div>
+                        
+                        
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div>
+            <blockquote class="blockquote3">
+               
+            </blockquote>
+            <p class="paragraph3">
+                採訪後記
+            </p>
+            <p class="paragraph2">   
+                    
+                    回想當初會想做這則專題，其實是在和組員的聊天中決定的，當時覺得乩童是
+                    一個很特別的身分，在這日新月異、講求科學論證的時代，乩童－這一個無法
+                    用科學證明的角色卻仍持續扮演著許多人信仰的寄託，仍有許多看得到或看不
+                    到的事情需要乩童來幫忙處理。雖然大家或多或少都聽過乩童，但對真實乩童
+                    的了解仍然十分稀少，有時甚至產生誤解或錯誤的猜測等等，與其一直抱持著
+                    疑問，我們決定親身把它解開，於是這則專題就這麼誕生了。
+                    </p>
+                    <p class="paragraph2"> 
+                    在採訪前，乩童在我心中的想像是神情嚴肅、拿著槌子敲打身軀或是在沙盤上畫符的中年男士，但在開始做專題後才發現，各種年齡的乩童都有，年輕的平時走在路上看起來就和大學生一樣，像是我去採訪的玉淵慈惠堂乩童張小雯現年才25歲，她不僅年輕，同時在處理堂裡事務以外的時間也會在網路上做直播主，這兩個看似沒有交集的身分竟然融為一體，這也再次超越了我對乩童的既定印象。在和小雯訪談的過程中，我也對乩童的日常處事了解更多，神明如何選定乩身、小雯如何周旋乩身與人生，在成為乩童後生活多了許多規範和義務，與同年齡人如此不同的生活際遇，小雯仍甘之如飴，視乩童為一份責任，虔誠、盡心盡力的奉獻。
+                    </p>
+                    <p class="paragraph2"> 
+                    在實際採訪後，我對乩童這個身分，多了許多了解，但也新增了許多疑問和好奇，我十分佩服願意接下乩童這份責任的每個人，他們奉獻自己一生的許多時間，作為神明的代表無私幫助信眾，在大眾的身後，他們默默地給予了台灣社會安定的力量。
+            </p>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item"><img src="H/洪靖淳.png" width=45px height=41px></div>
+            <div class="flex-item2">洪靖淳</div>
+            <div class="flex-item">
+                <a href="http://google.github.io/material-design-icons/" target="_blank">
+                    <i class="material-icons">face</i>
+                </a>
+            <div class="flex-item">
+                    <iframe src="https://www.facebook.com/plugins/share_button.php?"href="file:///C:/Users/User/Desktop/0609/%E5%A0%B1%E5%B0%8E%E5%BF%83%E5%BE%97%E9%A0%81/060901.html" layout=button_count size=small width=92 height=20  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
+                    </iframe>
+            </div>
+            <!-- Load Facebook SDK for JavaScript -->
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+             }(document, 'script', 'facebook-jssdk'));</script>
+
+             <!-- Your share button code -->
+            <div class="fb-share-button" 
+             data-href="https://www.your-domain.com/your-page.html" 
+             data-layout="button_count">
+            </div>
+
+                
+        </div>
+
+        </div>
+
+        <!-- 新聞作品 -->
+
+            <!-- flex item -->
+            <div class="card ">
+                    <figure class="card-img ">
+                        <img src="H/洪靖淳-1.png" width="100% "></img>
+                    </figure>
+                </div>
+            <div class="card ">
+                <figure class="card-img ">
+                    <img src="H/洪靖淳-2.png" width="100% "></img>
+                </figure>
+            </div>
+            <!-- flex item -->
+            <div class="card ">
+                <figure class="card-img ">
+                    <img src="H/洪靖淳-3.png" width="100% "></img>
+                </figure>
+            </div>
+        </div>
+        <div class="card-flex-box ">
+                <!-- flex item -->
+                <div style="position:relative">
+                    <div style="position:absolute;background-color: #FFFF;opacity: 0.5;top:80%">
+                    </div>
+                    <img src="H/洪靖淳-1.png" width="100%"></img>
+                </div>
+
+</body>
+
+
+</html>
